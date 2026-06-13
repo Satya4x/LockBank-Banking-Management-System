@@ -130,7 +130,7 @@ LB_BMS/
 5. **Run the project**
    Open your browser and go to:
    ```
-   http://localhost/LB_BMS/
+   http://localhost/LockBank-Banking-Management-System/
    ```
 
 ---
