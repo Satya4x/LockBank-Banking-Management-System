@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+.content {
+    width: 1000px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.5);
+}
+
+.toph2 {
+    font-size: 24px;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid yellow;
+    transition: 0.3s;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.7);
+}
+
+.user-table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid yellow;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table th {
+    background: yellow;
+    color: black;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background: yellow;
+    color: black;
+}
+
+.btn-delete {
+    background: yellow;
+    color: black;
+}
+
+.btn-edit:hover {
+    background: #ffcc00;
+}
+
+.btn-delete:hover {
+    background: #ffcc00;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-table th, .user-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-edit, .btn-delete {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

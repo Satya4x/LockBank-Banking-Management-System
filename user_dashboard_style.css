@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+.sidebar {
+    width: 260px;
+    background: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.user-profile {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.user-profile img:hover {
+    transform: scale(1.1);
+}
+
+.user-profile .username {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i {
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-header h2, .right-header h2 {
+    font-size: 20px;
+    color: yellow;
+}
+
+.account-summary {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.account-box {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5);
+    width: 200px;
+}
+
+.account-box h3 {
+    font-size: 18px;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.account-box p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.account-details {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.account-details p {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid yellow;
+}
+
+.recent-transactions {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 8px #000;
+}
+
+.recent-transactions h2 {
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #333;
+}
+
+.recent-transactions th, .recent-transactions td {
+    padding: 10px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+.recent-transactions th {
+    background: yellow;
+    color: black;
+}
+
+.recent-transactions tr:hover {
+    background: rgba(255, 255, 0, 0.3);
+}
+
+.transfer-form {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 8px #000;
+}
+
+.transfer-form label {
+    display: block;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.transfer-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    border: 2px solid yellow;
+    margin-bottom: 15px;
+}
+
+.transfer-form input:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.7);
+}
+
+.btn-transfer {
+    padding: 12px 18px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-transfer:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+.balance-box {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 8px #000;
+}
+
+.balance-box h3 {
+    font-size: 26px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.balance-box p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a.active {
+    background: yellow;
+    color: black;
+}
+
+.recent-transactions {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.recent-transactions h2 {
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+.recent-transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-transactions th, .recent-transactions td {
+    padding: 10px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+.recent-transactions th {
+    background: yellow;
+    color: black;
+}
+
+.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.failed {
+    color: red;
+    font-weight: bold;
+}
+
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.pagination .prev i,
+.pagination .next i {
+    margin: 0 5px;
+}

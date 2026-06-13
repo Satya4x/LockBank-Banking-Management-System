@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+.sidebar {
+    width: 260px;
+    background: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.user-profile {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid yellow;
+    transition: 0.3s ease-in-out;
+}
+
+.user-profile img:hover {
+    transform: scale(1.1);
+}
+
+.user-profile .username {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a i {
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-header h2, .right-header h2 {
+    font-size: 20px;
+    color: yellow;
+}
+
+.dashboard h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.notice-table-wrapper {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #000;
+    text-align: center;
+}
+
+.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.notice-table thead th {
+    background-color: yellow;
+    color: black;
+    padding: 12px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+.notice-table tbody td {
+    background-color: #2a2a2a;
+    border: 1px solid yellow;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.btn-read {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read:hover {
+    background-color: #0056b3;
+}
