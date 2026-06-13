@@ -107,7 +107,7 @@ LockBank-Banking-Management-System-main/
 2. **Move to server root**
    ```bash
    # For XAMPP on Windows
-   Move the LB_BMS folder to: C:/xampp/htdocs/
+   Move the LockBank-Banking-Management-System-main folder to: C:/xampp/htdocs/
 
    # For Linux
    Move to: /var/www/html/
