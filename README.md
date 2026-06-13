@@ -101,7 +101,7 @@ LB_BMS/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/LB_BMS.git
+   git clone https://github.com/Satya4x/LockBank-Banking-Management-System.git
    ```
 
 2. **Move to server root**
