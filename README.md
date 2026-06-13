@@ -33,7 +33,7 @@ A full-featured web-based **Bank Management System** built with **PHP & MySQL**,
 ## 🗂️ Project Structure
 
 ```
-LB_BMS/
+LockBank-Banking-Management-System-main/
 │
 ├── index.php                  # Landing page
 ├── login.php                  # User login
